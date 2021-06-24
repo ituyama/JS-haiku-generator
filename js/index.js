@@ -21,12 +21,12 @@ function loadImage(id)
 function drawText(canvas_id, kami,naka,simo,name)
 {
     
-
+    
 	var canvas = document.getElementById(canvas_id);
 
 	var img = canvas.getContext('2d');
     var names = canvas.getContext('2d');
-
+    
 
  
 
@@ -65,7 +65,7 @@ function drawText(canvas_id, kami,naka,simo,name)
     var simoy =350;
     var namex =90;
     var namey =550;
-
+    
     tategaki(img,kaminoku,kamix,kamiy)
     tategaki(img,nakanoku,nakax,nakay)
     tategaki(img,simonoku,simox,simoy)
