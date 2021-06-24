@@ -105,7 +105,7 @@ function saveCanvas(saveType) {
         fileName = "sample.jpg";
     }
     var canvases = document.getElementById("preview");
-    // base64エンコードされたデータを取得 「data:image/png;base64,iVBORw0k～」
+
     var base64 = canvases.toDataURL(imageType);
     // base64データをblobに変換
     var blob = Base64toBlob(base64);
@@ -114,15 +114,13 @@ function saveCanvas(saveType) {
 }
 // Base64データをBlobデータに変換
 function Base64toBlob(base64) {
-    // カンマで分割して以下のようにデータを分ける
-    // tmp[0] : データ形式（data:image/png;base64）
-    // tmp[1] : base64データ（iVBORw0k～）
+
     var tmp = base64.split(',');
     // base64データの文字列をデコード
     var data = atob(tmp[1]);
-    // tmp[0]の文字列（data:image/png;base64）からコンテンツタイプ（image/png）部分を取得
+
     var mime = tmp[0].split(':')[1].split(';')[0];
-    //  1文字ごとにUTF-16コードを表す 0から65535 の整数を取得
+
     var buf = new Uint8Array(data.length);
     for (var i = 0; i < data.length; i++) {
         buf[i] = data.charCodeAt(i);
