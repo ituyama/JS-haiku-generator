@@ -20,11 +20,12 @@ function loadImage(id)
 
 function drawText(canvas_id, kami,naka,simo,name)
 {
-    
+
     
 	var canvas = document.getElementById(canvas_id);
-
+    
 	var img = canvas.getContext('2d');
+   
     var names = canvas.getContext('2d');
     
 
