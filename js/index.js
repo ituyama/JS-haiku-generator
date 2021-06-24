@@ -89,3 +89,15 @@ var tategaki = function(context, text, x, y) {
       });
     });
   };
+  2
+
+      
+  function rel() {
+    if (window.name != "any") {
+    
+      location.reload();
+      window.name = "any";
+    } else {
+      window.name = "";
+    }
+  }
