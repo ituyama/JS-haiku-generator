@@ -1,0 +1,9 @@
+@font-face {
+    font-family:"fonts";
+    
+    src:url("../fonts/tate.otf") format("opentype");
+    
+}
+.font-loading{
+    opacity: 0;
+}
