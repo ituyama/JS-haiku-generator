@@ -91,13 +91,16 @@ var tategaki = function(context, text, x, y) {
   };
   2
 
-      
-  function rel() {
+ 
+  window.addEventListener('load', function(){
     if (window.name != "any") {
     
-      location.reload();
-      window.name = "any";
-    } else {
-      window.name = "";
-    }
-  }
+        location.reload();
+        window.name = "any";
+      } else {
+        window.name = "";
+      }
+    });
+
+
+  
