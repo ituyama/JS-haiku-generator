@@ -70,8 +70,12 @@ function drawText(canvas_id, kami,naka,simo,name)
     tategaki(img,nakanoku,nakax,nakay)
     tategaki(img,simonoku,simox,simoy)
     tategaki(names,namae,namex,namey)
- 
-
+    let link = document.getElementById('hiddenLink')
+    link.href = canvas.toDataURL()
+  
+    document.getElementById('canvasImage').src = canvas.toDataURL()
+  
+    link.click()
   
 	
 }
