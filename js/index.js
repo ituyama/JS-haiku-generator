@@ -99,7 +99,7 @@ window.addEventListener('load', function () {
 
 function saveCanvas(saveType) {
     var imageType = "image/png";
-    var fileName = "sample.png";
+    var fileName = "haik.png";
     if (saveType === "jpeg") {
         imageType = "image/jpeg";
         fileName = "sample.jpg";
