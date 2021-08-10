@@ -22,7 +22,8 @@ function drawText(canvas_id, kami, naka, simo, name) {
 
     var canvas = document.getElementById(canvas_id);
 
-    var img = canvas.getContext('2d');
+    var img = canvas.getCty789o0
+    ontext('2d');
 
 
 
@@ -149,3 +150,12 @@ function saveBlob(blob, fileName) {
     // イベントの発火
     ass.dispatchEvent(event);
 }
+
+
+
+
+
+
+
+
+
